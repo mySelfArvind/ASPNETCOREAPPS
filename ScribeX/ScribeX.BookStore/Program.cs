@@ -4,28 +4,15 @@ namespace ScribeX.BookStore
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            CreateBuilder(args).Build().Run();
+        }
 
-            //add services to DI container
-
-            var app = builder.Build();
-
-            //add http pipelines
-            app.Use(async (context, next) =>
+        public static IHostBuilder CreateBuilder(string[] args)
+        {
+            return Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webBuilder =>
             {
-                await context.Response.WriteAsync("request from first middleware");
-                await next();
+                webBuilder.UseStartup<Startup>();
             });
-
-            app.Use(async (context, next) =>
-            {
-                await context.Response.WriteAsync("request from second middleware");
-                await next();
-            });
-
-            app.MapGet("/", () => "Hello World!");
-
-            app.Run();
         }
     }
 }
