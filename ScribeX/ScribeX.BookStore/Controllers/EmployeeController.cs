@@ -1,22 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ScribeX.BookStore.Models;
+using ScribeX.BookStore.Repositories;
 
 namespace ScribeX.BookStore.Controllers
 {
     public class EmployeeController : Controller
     {
-        public string AllEmployees()
+        EmployeeRepository _employeeRepository;
+        public EmployeeController()
         {
-            return "All Employee";
+            _employeeRepository = new EmployeeRepository();
+        }
+        public List<Employee> AllEmployees()
+        {
+            return _employeeRepository.AllEmployee();
         }
 
-        public string EmployeeId(int id)
+        public Employee? EmployeeId(int id)
         {
-            return $"Employee with Id: {id}";
+            return _employeeRepository.EmployeeById(id);
         }
 
-        public string EmployeeByNameAndDepartment(string name, string department)
+        public List<Employee>? EmployeeByNameAndDepartment(string name, string department)
         {
-            return $"Employee Name : {name} & Department : {department}";
+            return _employeeRepository.EmployeeByNameOrDepartment(name, department);
         }
     }
 }
