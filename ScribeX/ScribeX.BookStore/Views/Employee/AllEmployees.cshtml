@@ -1,0 +1,45 @@
+﻿@model List<ScribeX.BookStore.Models.Employee>;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td{
+            padding: 5px;
+        }
+        thead{
+            background-color: #3160b1;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>List of All the Employees...</h1>
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>DOJ</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employees in Model)
+            {
+                <tr>
+                    <td>@employees.Id</td>
+                    <td>@employees.Name</td>
+                    <td>@employees.DOB</td>
+                    <td>@employees.DOJ</td>
+                    <td>@employees.Department</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

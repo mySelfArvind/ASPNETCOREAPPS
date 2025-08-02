@@ -11,9 +11,10 @@ namespace ScribeX.BookStore.Controllers
         {
             _employeeRepository = new EmployeeRepository();
         }
-        public List<Employee> AllEmployees()
+        public ViewResult AllEmployees()
         {
-            return _employeeRepository.AllEmployee();
+            var data =  _employeeRepository.AllEmployee();
+            return View(data);
         }
 
         public Employee? EmployeeId(int id)
