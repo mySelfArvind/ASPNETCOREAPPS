@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Index</title>
     <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
     <style>
         .container {
             background-color: #e2e2e2;
@@ -41,5 +42,16 @@
     <div class="static-files">
         <img class="logo" src="~/images/logo.jpg" alt="logo" />
     </div>
+    <div class="container">
+        <h1 class="h1">Styled with Bootstrap</h1>
+        <button class="btn btn-outline-info">Click Me</button>
+    </div>
+
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            alert("Hello, page loaded");
+        })
+    </script>
 </body>
 </html>
