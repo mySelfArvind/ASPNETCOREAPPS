@@ -1,0 +1,15 @@
+﻿body {
+}
+
+.logo{
+    width:400px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px blue;
+}
+.logo:hover {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px blue;
+}

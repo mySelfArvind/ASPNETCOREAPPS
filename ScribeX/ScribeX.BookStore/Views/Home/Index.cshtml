@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Index</title>
+    <link href="~/css/site.css" rel="stylesheet" />
     <style>
-        .container{
+        .container {
             background-color: #e2e2e2;
             padding: 10px;
             margin: 0px 20px;
@@ -15,25 +16,31 @@
     </style>
 </head>
 <body>
-    <h1>Hello Users, Welcome to ScribeX - a DevHub</h1>
-    <div class="container">
-        <marquee>A location point where you can share and accept knowledge</marquee>
+    <div style="display:none">
+        <h1>Hello Users, Welcome to ScribeX - a DevHub</h1>
+        <div class="container">
+            <marquee>A location point where you can share and accept knowledge</marquee>
+        </div>
+        <h1>@DateTime.Now.ToLocalTime()</h1>
+        @{
+            string PageName = "ScribeX";
+        }
+        <h2>@PageName</h2>
+
+        @{
+            int a = 10, b = 20, c = a + b;
+        }
+
+        <h3>SUM = @c</h3>
+
+        <h4>arvind@prudencesoftware.com</h4>
+
+        <h5>Twitter - @@Arvind1010</h5>
+        <h5>Twitter - @@@@Arvind1010</h5>
     </div>
-    <h1>@DateTime.Now.ToLocalTime()</h1>
-    @{
-        string PageName = "ScribeX";
-    }
-    <h2>@PageName</h2>
-
-    @{
-        int a = 10, b = 20, c = a + b;
-    }
-
-    <h3>SUM = @c</h3>
-
-    <h4>arvind@prudencesoftware.com</h4>
-
-    <h5>Twitter - @@Arvind1010</h5>
-    <h5>Twitter - @@@@Arvind1010</h5>
+    <div class="static-files">
+        <img class="logo" src="~/images/logo.jpg" alt="logo" />
+        <img class="logo" src="~/MyFiles/pahad.jpg" alt="pahad" />
+    </div>
 </body>
 </html>
