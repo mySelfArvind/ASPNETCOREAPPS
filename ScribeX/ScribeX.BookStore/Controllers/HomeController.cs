@@ -8,5 +8,10 @@ namespace ScribeX.BookStore.Controllers
         {
             return View();
         }
+
+        public ViewResult About()
+        {
+            return View();
+        }
     }
 }
