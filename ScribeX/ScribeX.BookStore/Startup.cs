@@ -15,7 +15,10 @@ namespace ScribeX.BookStore
             app.UseRouting();
             app.UseEndpoints(endPoints =>
             {
-                endPoints.MapDefaultControllerRoute();
+                endPoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Book}/{action=Index}/{id?}"
+                    );
             });
 
         }
