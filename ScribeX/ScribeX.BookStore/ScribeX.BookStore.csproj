@@ -14,9 +14,4 @@
     <None Include="wwwroot\images\pahad.jpg" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
