@@ -1,0 +1,27 @@
+﻿@model List<ScribeX.BookStore.Models.Book>
+
+@{
+    Layout = "_Layout";
+}
+
+<p class="h6 mt-3 mb-0">All Books</p>
+<hr />
+
+<div class="row">
+    @foreach(var book in Model)
+    {
+        <div class="col-md-3 mb-3">
+            <div class="card book-card">
+                <img src="~/images/@book.ImageName" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@book.Title</h5>
+                    <p class="card-text">@book.Description</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>₹ @book.Price</span>
+                        <a href="./BookDetails/@book.Id" class="btn btn-sm btn-warning text-light">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -9,5 +9,6 @@
         public double Price { get; set; }
         public string Language { get; set; } = string.Empty;
         public int Pages { get; set; }
+        public string ImageName { get; set; } = "";
     }
 }

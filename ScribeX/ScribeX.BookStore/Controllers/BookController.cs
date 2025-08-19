@@ -17,6 +17,18 @@ namespace ScribeX.BookStore.Controllers
             return View(books);
         }
 
+        public ViewResult AllBooks()
+        {
+            return View(bookService.GetAllBooks());
+        }
+
+        [HttpGet]
+        public ViewResult BookDetails([FromRoute]int id)
+        {
+            var book = bookService.GetBookById(id);
+            return View(book);
+        }
+
         public ViewResult About()
         {
             return View();

@@ -30,7 +30,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Robert C. Martin",
                 Price = 45.99,
                 Language = "English",
-                Pages = 464
+                Pages = 464,
+                ImageName = "Book1.jpg"
             },
             new Book
             {
@@ -40,7 +41,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Andrew Hunt, David Thomas",
                 Price = 39.50,
                 Language = "English",
-                Pages = 352
+                Pages = 352,
+                ImageName = "Book2.jpg"
             },
             new Book
             {
@@ -50,7 +52,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
                 Price = 49.99,
                 Language = "English",
-                Pages = 395
+                Pages = 395,
+                ImageName = "Book3.jpg"
             },
             new Book
             {
@@ -60,7 +63,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Martin Fowler",
                 Price = 42.75,
                 Language = "English",
-                Pages = 448
+                Pages = 448,
+                ImageName = "Book4.jpg"
             },
             new Book
             {
@@ -70,7 +74,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
                 Price = 89.99,
                 Language = "English",
-                Pages = 1312
+                Pages = 1312,
+                ImageName = "Book5.jpg"
             },
             new Book
             {
@@ -80,7 +85,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Steve McConnell",
                 Price = 55.00,
                 Language = "English",
-                Pages = 960
+                Pages = 960,
+                ImageName = "Book6.jpg"
             },
             new Book
             {
@@ -90,7 +96,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Eric Freeman, Elisabeth Robson",
                 Price = 44.20,
                 Language = "English",
-                Pages = 694
+                Pages = 694,
+                ImageName = "Book7.jpg"
             },
             new Book
             {
@@ -100,7 +107,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Eric Evans",
                 Price = 60.00,
                 Language = "English",
-                Pages = 560
+                Pages = 560,
+                ImageName = "Book8.jpg"
             },
             new Book
             {
@@ -110,7 +118,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Donald E. Knuth",
                 Price = 190.00,
                 Language = "English",
-                Pages = 3168
+                Pages = 3168,
+                ImageName = "Book9.jpg"
             },
             new Book
             {
@@ -120,7 +129,8 @@ namespace ScribeX.BookStore.Repositories
                 Author = "Michael Feathers",
                 Price = 38.95,
                 Language = "English",
-                Pages = 456
+                Pages = 456,
+                ImageName = "Book10.jpg"
             }};
         }
     }

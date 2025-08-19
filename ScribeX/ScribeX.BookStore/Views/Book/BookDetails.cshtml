@@ -1,0 +1,35 @@
+﻿@model ScribeX.BookStore.Models.Book
+
+@{
+    Layout = "_Layout";
+}
+@if (Model != null)
+{
+    <div class="row d-flex mt-3">
+        <div class="col-md-6 offset-md-3">
+        <p class="h5">Book Details</p>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="/images/@Model.ImageName" alt="book" class="img-thumbnail">
+                            <p class="figure-img text-center fw-medium">@Model.Author</p>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <p class="display-6 fs-6 fw-bolder d-flex justify-content-between">
+                                <span>@Model.Title</span>
+                                <span class="fst-italic fw-semibold">₹ @Model.Price</span>
+                            </p>
+                            <p class="display-6 fs-6 fw-medium">@Model.Description</p>
+                            <p class="display-6 fs-6 fw-normal d-flex justify-content-between">
+                                <span>Language: @Model.Language</span>
+                                <span>Pages: @Model.Pages</span>
+                            </p>
+                            <a class="btn btn-sm btn-warning text-light fw-bold w-100">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
