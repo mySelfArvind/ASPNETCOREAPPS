@@ -30,6 +30,7 @@
             </div>
         </nav>
     </header>
+    @RenderSection("BreadCrumb", required: false)
     <div class="container">
         @RenderBody()
     </div>
@@ -71,5 +72,6 @@
     </footer>
     <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
     <script src="~/lib/jquery/jquery.min.js"></script>
+    @RenderSection("IndexScript1", required: false)
 </body>
 </html>
