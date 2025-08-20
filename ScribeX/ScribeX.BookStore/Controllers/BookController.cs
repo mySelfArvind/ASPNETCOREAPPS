@@ -13,6 +13,7 @@ namespace ScribeX.BookStore.Controllers
         }
         public ViewResult Index()
         {
+            ViewBag.UserName = "Arvind Vishwakarma";
             List<Book> books = bookService.GetAllBooks();
             return View(books);
         }
